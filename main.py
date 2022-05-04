@@ -25,7 +25,7 @@ Builder.load_string("""
                 root.manager.transition.direction = "left" 
                 
         Button:
-            font_size: 50
+            font_size: '20sp'
             background_color: 0, 0 , 0 , 1
             size_hint_y: None
             height: 200
@@ -35,14 +35,24 @@ Builder.load_string("""
                 root.manager.transition.direction = "left"         
                 
         Button:
-            font_size: 50
+            font_size: '20sp'
             background_color: 0, 0 , 0 , 1
             size_hint_y: None
             height: 200
-            text: "KSquared-Mathematics : Derivatives Calculator"
+            text: "KSquared-Mathematics"
             on_release:
                 app.root.current = "Menu"
-                root.manager.transition.direction = "left"                 
+                root.manager.transition.direction = "left"  
+                
+        Button:
+            font_size: '20sp'
+            background_color: 0, 0 , 0 , 1
+            size_hint_y: None
+            height: 200
+            text: "Derivatives Calculator"
+            on_release:
+                app.root.current = "Menu"
+                root.manager.transition.direction = "left"   
                 
 """)
 
@@ -66,14 +76,14 @@ Builder.load_string("""
             height: self.minimum_height
             
             Label:
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
                 text: "Menu"
                     
             Button:
-                font_size: 75
+                font_size: '20sp'
                 background_color: 0, 0, 1, 1
                 size_hint_y: None
                 height: 200
@@ -84,7 +94,7 @@ Builder.load_string("""
                     root.manager.transition.direction = "left" 
                     
             Button:
-                font_size: 75
+                font_size: '20sp'
                 background_color: 1, 0, 1, 1
                 size_hint_y: None
                 height: 200
@@ -95,7 +105,7 @@ Builder.load_string("""
                     root.manager.transition.direction = "left"
                     
             Button:
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -105,7 +115,7 @@ Builder.load_string("""
                     webbrowser.open('https://www.ksquaredmathematics.com/subscribe') 
                     
             Label:
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -114,8 +124,8 @@ Builder.load_string("""
             Image:
                 source: 'KSquared_QR.png'
                 size_hint_y: None
-                height: 1000
-                width: 1000
+                height: 800
+                width: 800
                 
 """)
 
@@ -139,7 +149,7 @@ Builder.load_string("""
             height: self.minimum_height
             
             Label:
-                font_size: 50
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -148,7 +158,7 @@ Builder.load_string("""
             Button:
                 id: steps
                 text: "Menu"   
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 background_color: 0, 0 , 1 , 1
                 height: 200
@@ -158,14 +168,14 @@ Builder.load_string("""
                     root.manager.transition.direction = "right" 
                     
             Label:
-                font_size: 40
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
                 text: "Derivatives Calculators v0.1"
                 
             Label:
-                font_size: 40
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -193,7 +203,7 @@ Builder.load_string("""
             height: self.minimum_height
             
             Label:
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 200
                 padding: 10, 10
@@ -211,7 +221,7 @@ Builder.load_string("""
                 Button:
                     id: steps
                     text: "Menu"   
-                    font_size: 75
+                    font_size: '20sp'
                     size_hint_y: None
                     background_color: 0, 0 , 1 , 1
                     height: 200
@@ -223,7 +233,7 @@ Builder.load_string("""
                 Button:
                     id: steps
                     text: "Clear All"   
-                    font_size: 75
+                    font_size: '20sp'
                     size_hint_y: None
                     background_color: 1, 0 , 0 , 1
                     height: 200
@@ -240,7 +250,7 @@ Builder.load_string("""
                 text: entry.text
                 hint_text: "f(x)="
                 multiline: False
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 125
                 padding: 10              
@@ -250,7 +260,7 @@ Builder.load_string("""
                 text: prime.text
                 hint_text: "# of times to derive"
                 multiline: False
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 125
                 padding: 10            
@@ -261,7 +271,7 @@ Builder.load_string("""
                 text: respect.text
                 hint_text: "With respect to: x, y or z"
                 multiline: False
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 125
                 padding: 10  
@@ -272,7 +282,7 @@ Builder.load_string("""
                 text: value.text
                 hint_text: "Respect = Value"
                 multiline: False
-                font_size: 75
+                font_size: '20sp'
                 size_hint_y: None
                 height: 125
                 padding: 10  
@@ -289,7 +299,7 @@ Builder.load_string("""
                 Button:
                     id: steps
                     text: "Derivative"   
-                    font_size: 75
+                    font_size: '20sp'
                     size_hint_y: None
                     background_color: 0, 1 , 0 , 1
                     height: 200
@@ -355,8 +365,8 @@ class Derivatives(Screen):
                 print("Invalid Respect Input" )
             
             if int(prime) > 0 and str(respect) != "":
-                self.ids.list_of_steps.add_widget(Label(text= "f(" + str(respect) + ") = " + str(func).replace("**","^").replace("*x","x").replace("*y","y").replace("*z","z").replace("+"," + ").replace("-"," - ").replace("***","**") ,font_size = 50, size_hint_y= None, height=100))
-                self.ids.list_of_steps.add_widget(Label(text= "Derive " + str(prime) + " time(s) with respect to " + str(respect),font_size = 50, size_hint_y= None, height=100))
+                self.ids.list_of_steps.add_widget(Label(text= "f(" + str(respect) + ") = " + str(func).replace("**","^").replace("*x","x").replace("*y","y").replace("*z","z").replace("+"," + ").replace("-"," - ").replace("***","**") ,font_size = '15sp', size_hint_y= None, height=100))
+                self.ids.list_of_steps.add_widget(Label(text= "Derive " + str(prime) + " time(s) with respect to " + str(respect),font_size = '15sp', size_hint_y= None, height=100))
                 self.layouts.append(layout)
                 
                 print("_________________________________________")
@@ -401,9 +411,9 @@ class Derivatives(Screen):
                         
                         func_display_back_slice = str(func_display_list[5:]).replace("[","").replace("]","").replace("'","").replace(",","")
                         print("func_display_back_slice",func_display_back_slice)
-                        self.ids.list_of_steps.add_widget(Label(text= "-----------------------------------------------------------------------------------------------" ,font_size = 50, size_hint_y= None, height=100))
-                        self.ids.list_of_steps.add_widget(Label(text= "f" + "'" * (i+1) + "(" + str(respect) + ") = " + str(func_display_front_slice).replace("**","^"),font_size = 50, size_hint_y= None, height=100))
-                        self.ids.list_of_steps.add_widget(Label(text= str(func_display_back_slice).replace("**","^") ,font_size = 50, size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= "-----------------------------------------------------------------------------------------------" ,font_size = '15sp', size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= "f" + "'" * (i+1) + "(" + str(respect) + ") = " + str(func_display_front_slice).replace("**","^"),font_size = '15sp', size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= str(func_display_back_slice).replace("**","^") ,font_size = '15sp', size_hint_y= None, height=100))
                         self.layouts.append(layout)
                     
                     elif len(func_display_list) > 12:
@@ -418,18 +428,18 @@ class Derivatives(Screen):
                         func_display_back_slice = str(func_display_list[11:]).replace("[","").replace("]","").replace("'","").replace(",","")
                         print("func_display_back_slice",func_display_back_slice)
                         
-                        self.ids.list_of_steps.add_widget(Label(text= "-----------------------------------------------------------------------------------------------" ,font_size = 50, size_hint_y= None, height=100))
-                        self.ids.list_of_steps.add_widget(Label(text= "f" + "'" * (i+1) + "(" + str(respect) + ") = " + str(func_display_front_slice).replace("**","^") ,font_size = 50, size_hint_y= None, height=100))
-                        self.ids.list_of_steps.add_widget(Label(text= str(func_display_mid_slice).replace("**","^"),font_size = 50, size_hint_y= None, height=100))
-                        self.ids.list_of_steps.add_widget(Label(text= str(func_display_back_slice).replace("**","^") ,font_size = 50, size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= "-----------------------------------------------------------------------------------------------" ,font_size = '15sp', size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= "f" + "'" * (i+1) + "(" + str(respect) + ") = " + str(func_display_front_slice).replace("**","^") ,font_size = '15sp', size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= str(func_display_mid_slice).replace("**","^"),font_size = '15sp', size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= str(func_display_back_slice).replace("**","^") ,font_size = '15sp', size_hint_y= None, height=100))
                         self.layouts.append(layout)
                     
                     else:
                         print("ELSE")
                         print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
                         print("func_display_list",func_display_list)
-                        self.ids.list_of_steps.add_widget(Label(text= "-----------------------------------------------------------------------------------------------" ,font_size = 50, size_hint_y= None, height=100))
-                        self.ids.list_of_steps.add_widget(Label(text= "f" + "'" * (i+1) + "(" + str(respect) + ") = " + str(func).replace("**","^"),font_size = 50, size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= "-----------------------------------------------------------------------------------------------" ,font_size = '15sp', size_hint_y= None, height=100))
+                        self.ids.list_of_steps.add_widget(Label(text= "f" + "'" * (i+1) + "(" + str(respect) + ") = " + str(func).replace("**","^"),font_size = '15sp', size_hint_y= None, height=100))
                         self.layouts.append(layout)
                         
                     print("Completed",i+1,"derivative")
@@ -445,20 +455,20 @@ class Derivatives(Screen):
                 func_evaled = eval(str(func))
                 print("func_evaled = ",func_evaled)
                 
-                self.ids.list_of_steps.add_widget(Label(text= "-----------------------------------------------------------------------------------------------" ,font_size = 50, size_hint_y= None, height=100))
-                self.ids.list_of_steps.add_widget(Label(text= "f" + "'" * (i) + "(" + value + ") = " + str(func_evaled),font_size = 50, size_hint_y= None, height=100))
+                self.ids.list_of_steps.add_widget(Label(text= "-----------------------------------------------------------------------------------------------" ,font_size = '15sp', size_hint_y= None, height=100))
+                self.ids.list_of_steps.add_widget(Label(text= "f" + "'" * (i) + "(" + value + ") = " + str(func_evaled),font_size = '15sp', size_hint_y= None, height=100))
                 self.layouts.append(layout)
                 
             else:
                 if int(prime) == 0:
-                    self.ids.list_of_steps.add_widget(Label(text= "Prime must be greater than 0!" ,font_size = 50, size_hint_y= None, height=100))
+                    self.ids.list_of_steps.add_widget(Label(text= "Prime must be greater than 0!" ,font_size = '15sp', size_hint_y= None, height=100))
                     self.layouts.append(layout)
                 elif str(respect) == "":
-                    self.ids.list_of_steps.add_widget(Label(text= "Respect must be entered" ,font_size = 50, size_hint_y= None, height=100))
+                    self.ids.list_of_steps.add_widget(Label(text= "Respect must be entered" ,font_size = '15sp', size_hint_y= None, height=100))
                     self.layouts.append(layout)
             
         except Exception:
-            self.ids.list_of_steps.add_widget(Label(text= "Invalid Input" ,font_size = 50, size_hint_y= None, height=100))
+            self.ids.list_of_steps.add_widget(Label(text= "Invalid Input" ,font_size = '15sp', size_hint_y= None, height=100))
             self.layouts.append(layout)
             
 class Homepage(Screen):
